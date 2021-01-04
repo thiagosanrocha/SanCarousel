@@ -21,7 +21,10 @@ yarn add sancarousel
 
 ### Usage
 #
-**Example**
+**Example 1**
+
+![Example1](./assets/prints/example_1.png)
+
 ```js
 import React from 'react';
 import SanCarousel from 'sancarousel';
@@ -49,6 +52,10 @@ const App = () => {
 You can pass several properties to SanCarousel and customize it the way you prefer
 
 <br>
+
+**Example 2**
+
+![Example1](./assets/prints/example_2.png)
 
 ```js
 import React from 'react';
