@@ -3,17 +3,12 @@
 
 A simple Carousel easy to use and very customizable.
 
-
-<br>
-
 ### Overview
 #
 SanCarousel is a performance focused library that helps you create a slide easily and very customizable in just a few steps.
 
-<br>
 
 ## Getting started
-#
 **npm**
 ```bash
 npm install sancarousel --save
@@ -23,7 +18,6 @@ npm install sancarousel --save
 ```bash
 yarn add sancarousel
 ```
-<br>
 
 ### Usage
 #
