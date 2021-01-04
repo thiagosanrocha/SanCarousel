@@ -1,0 +1,43 @@
+{
+  "name": "sancarousel",
+  "version": "1.0.0",
+  "description": "A simple Carousel easy to use and very customizable.",
+  "main": "dist/index.js",
+  "types" : "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --declaration",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagosanrocha/SanCarousel.git"
+  },
+  "keywords": [
+    "SanCarousel",
+    "Carousel",
+    "Slide",
+    "Slider"
+  ],
+  "author": "Thiago Rocha <thiagorocha010@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thiagosanrocha/SanCarousel/issues"
+  },
+  "homepage": "https://github.com/thiagosanrocha/SanCarousel#readme",
+  "peerDependencies": {
+    "react": "^17.x",
+    "react-dom": "^17.x",
+    "styled-components": "^5.x",
+    "react-icons": "^4.x"
+  },
+  "dependencies": {
+    "react": "^17.x",
+    "react-dom": "^17.x",
+    "react-icons": "^4.x",
+    "styled-components": "^5.x"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.3",
+    "@types/styled-components": "^5.1.7"
+  }
+}
