@@ -8,7 +8,7 @@ A simple Carousel easy to use and very customizable.
 SanCarousel is a performance focused library that helps you create a slide easily and very customizable in just a few steps.
 
 
-## Getting started
+### Getting started
 **npm**
 ```bash
 npm install sancarousel --save
