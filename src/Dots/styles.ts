@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+interface ContainerProps {
+  marginRightDots?: string;
+  marginBottomDots?: string;
+}
+
+export const Container = styled.div<ContainerProps>`
   position: absolute;
-  bottom: 5%;
-  right: 8%;
+  bottom: ${props => props.marginBottomDots ? props.marginBottomDots : '5%'};;
+  right: ${props => props.marginRightDots ? props.marginRightDots : '8%'};
   display: flex;
   align-items: center;
 `;

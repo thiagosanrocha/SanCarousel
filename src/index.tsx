@@ -21,6 +21,8 @@ interface SanCarouselProps {
   height?: string;
   dots?: boolean;
   dotsDiameter?: number;
+  marginRightDots?: string;
+  marginBottomDots?: string;
   arrows?: boolean;
   slideSize?: string;
   spaceBetweenSlides?: string;
@@ -37,6 +39,8 @@ const SanCarousel: React.FC<SanCarouselProps> = ({
   height,
   dots = true,
   dotsDiameter,
+  marginRightDots,
+  marginBottomDots,
   arrows = true,
   slideSize,
   spaceBetweenSlides,
@@ -147,6 +151,8 @@ const SanCarousel: React.FC<SanCarouselProps> = ({
           slides={_slides}
           handleClick={goToSlide}
           dotsDiameter={dotsDiameter}
+          marginRightDots={marginRightDots}
+          marginBottomDots={marginBottomDots}
         />
       )}
     </Container>
