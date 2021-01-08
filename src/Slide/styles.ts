@@ -8,8 +8,11 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
   height: 100%;
   min-width: 100%;
-  padding: 0
-    ${props => (props.spaceBetweenSlides ? props.spaceBetweenSlides : 0)};
+  box-sizing: border-box;
+
+  ${props => props.spaceBetweenSlides && css`
+    padding: 0 ${props.spaceBetweenSlides};
+  `}
 
   ${props =>
     props.containerBorderRadius &&
