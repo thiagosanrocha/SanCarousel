@@ -23,7 +23,7 @@ yarn add sancarousel
 #
 **Example 1**
 
-![Example1](./assets/prints/example_1.png)
+![Example1](https://live.staticflickr.com/65535/50807167121_62f4d01df4_h.jpg)
 
 ```js
 import React from 'react';
@@ -55,7 +55,7 @@ You can pass several properties to SanCarousel and customize it the way you pref
 
 **Example 2**
 
-![Example1](./assets/prints/example_2.png)
+![Example1](https://live.staticflickr.com/65535/50806422403_e3e449f99d_h.jpg)
 
 ```js
 import React from 'react';
@@ -78,11 +78,11 @@ const slides = [
 const App = () => {
   <SanCarousel
     slides={slides}
-    width="100%"
     height="350px"
     slideSize="90%"
     autoPlay={2000}
     focusSlide
+    spaceBetweenSlides="10px"
   />
 }
 ```
@@ -106,6 +106,10 @@ const App = () => {
 * `dots`: Show dot indicators
 
 * `dotsDiameter`: Diameter of dot indicator
+
+* `marginRightDots`: right margin of dots container
+
+* `marginBottomDots`: bottom margin of dots container
 
 * `arrows`: Prev/Next Arrows
 
