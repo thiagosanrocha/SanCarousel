@@ -7,7 +7,7 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   position: absolute;
-  bottom: ${props => props.marginBottomDots ? props.marginBottomDots : '5%'};;
+  bottom: ${props => props.marginBottomDots ? props.marginBottomDots : '5%'};
   right: ${props => props.marginRightDots ? props.marginRightDots : '8%'};
   display: flex;
   align-items: center;
