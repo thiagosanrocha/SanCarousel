@@ -33,6 +33,7 @@ export const Image = styled.div<ImageProps>`
   width: 100%;
   background: url(${props => props.img}) no-repeat center;
   background-size: cover;
+  box-sizing: border-box;
 
   ${props =>
     props.slideBorderRadius &&
