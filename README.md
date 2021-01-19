@@ -119,4 +119,8 @@ const App = () => {
 
 * `slideFocusColor`: Focus color on the selected element
 
+* `focusSlideThickness`: Focus thickness on the selected slide
+
+* `containerBorderRadius`: Main container radius size
+
 * `slideBorderRadius`: Slide size radius
