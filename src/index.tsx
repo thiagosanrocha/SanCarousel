@@ -28,6 +28,7 @@ interface SanCarouselProps {
   spaceBetweenSlides?: string;
   focusSlide?: boolean;
   slideFocusColor?: string;
+  focusSlideThickness?: string;
   slideBorderRadius?: string;
   containerBorderRadius?: string;
 }
@@ -47,6 +48,7 @@ const SanCarousel: React.FC<SanCarouselProps> = ({
   spaceBetweenSlides,
   focusSlide,
   slideFocusColor,
+  focusSlideThickness,
   slideBorderRadius,
   containerBorderRadius,
 }) => {
@@ -136,6 +138,7 @@ const SanCarousel: React.FC<SanCarouselProps> = ({
             spaceBetweenSlides={spaceBetweenSlides}
             focusSlide={focusSlide}
             slideFocusColor={slideFocusColor}
+            focusSlideThickness={focusSlideThickness}
             slideBorderRadius={slideBorderRadius}
           />
         ))}

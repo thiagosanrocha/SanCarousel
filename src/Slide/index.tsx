@@ -8,6 +8,7 @@ interface SlideProps {
   focusSlide?: boolean;
   slideFocusColor?: string;
   slideBorderRadius?: string;
+  focusSlideThickness?: string;
 }
 
 const Slide: React.FC<SlideProps> = ({
@@ -16,6 +17,7 @@ const Slide: React.FC<SlideProps> = ({
   focusSlide,
   slideFocusColor,
   slideBorderRadius,
+  focusSlideThickness,
 }) => (
   <Container
     spaceBetweenSlides={spaceBetweenSlides}
@@ -26,6 +28,7 @@ const Slide: React.FC<SlideProps> = ({
       focusSlide={focusSlide}
       slideFocusColor={slideFocusColor}
       slideBorderRadius={slideBorderRadius}
+      focusSlideThickness={focusSlideThickness}
     />
   </Container>
 );

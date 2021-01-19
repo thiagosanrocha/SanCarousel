@@ -24,6 +24,7 @@ interface ImageProps {
   focusSlide?: boolean;
   slideFocusColor?: string;
   slideBorderRadius?: string;
+  focusSlideThickness?: string;
 }
 
 export const Image = styled.div<ImageProps>`
@@ -37,12 +38,13 @@ export const Image = styled.div<ImageProps>`
     border-radius: ${slideBorderRadius};
   `}
 
-  ${({ focusSlide, slideFocusColor }) => focusSlide && css`
-    border: 4px solid transparent;
-    transition: border 0.3s;
+  ${({ focusSlide, slideFocusColor, focusSlideThickness }) => focusSlide && css`
+    transition: box-shadow 300ms;
 
     &:hover {
-      border: 4px solid ${slideFocusColor ? slideFocusColor : '#FFF'};
+      box-shadow: inset 0 0 0 
+        ${focusSlideThickness ? focusSlideThickness : '4px'} 
+        ${slideFocusColor ? slideFocusColor : '#FFF'};
     }
-  `};
+  `}
 `;
