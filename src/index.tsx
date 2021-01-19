@@ -29,6 +29,7 @@ interface SanCarouselProps {
   focusSlide?: boolean;
   slideFocusColor?: string;
   slideBorderRadius?: string;
+  containerBorderRadius?: string;
 }
 
 const SanCarousel: React.FC<SanCarouselProps> = ({
@@ -47,6 +48,7 @@ const SanCarousel: React.FC<SanCarouselProps> = ({
   focusSlide,
   slideFocusColor,
   slideBorderRadius,
+  containerBorderRadius,
 }) => {
   const [isAutoPlayed, setIsAutoPlayed] = useState(!!autoPlay);
 
@@ -116,6 +118,7 @@ const SanCarousel: React.FC<SanCarouselProps> = ({
 
   return (
     <Container
+      borderRadius={containerBorderRadius}
       onMouseEnter={() => setIsAutoPlayed(false)}
       onMouseLeave={() => setIsAutoPlayed(true)}
       width={width}

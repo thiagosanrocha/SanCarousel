@@ -1,13 +1,18 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 interface ContainerProps {
   width?: string;
   height?: string;
+  borderRadius?: string;
 }
 
 export const Container = styled.div<ContainerProps>`
   position: relative;
-  height: ${props => (props.height ? props.height : '100vh')};
-  width: ${props => (props.width ? props.width : '100%')};
+  height: ${({ height }) => (height ? height : '100vh')};
+  width: ${({ width }) => (width ? width : '100%')};
   overflow: hidden;
+
+  ${({ borderRadius }) => borderRadius && css`
+    border-radius: ${borderRadius};
+  `}
 `;
