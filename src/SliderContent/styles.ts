@@ -9,13 +9,13 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   height: 100%;
-  width: ${props => (props.slideSize ? props.slideSize : '100%')};
+  width: ${({ slideSize }) => (slideSize ? slideSize : '100%')};
   display: flex;
   align-items: center;
   margin: 0 auto;
 
-  ${props => css`
-    transform: translateX(-${props.translateX}%);
-    transition: transform ${props.transition}s;
+  ${({ translateX, transition }) => css`
+    transform: translateX(-${translateX}%);
+    transition: transform ${transition}s;
   `}
 `;

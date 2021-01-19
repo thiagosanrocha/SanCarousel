@@ -10,15 +10,13 @@ export const Container = styled.div<ContainerProps>`
   min-width: 100%;
   box-sizing: border-box;
 
-  ${props => props.spaceBetweenSlides && css`
-    padding: 0 ${props.spaceBetweenSlides};
+  ${({ spaceBetweenSlides }) => spaceBetweenSlides && css`
+    padding: 0 ${spaceBetweenSlides};
   `}
 
-  ${props =>
-    props.containerBorderRadius &&
-    css`
-      border-radius: ${props.containerBorderRadius};
-    `}
+  ${({ containerBorderRadius }) => containerBorderRadius && css`
+    border-radius: ${containerBorderRadius};
+  `}
 `;
 
 interface ImageProps {
@@ -31,25 +29,20 @@ interface ImageProps {
 export const Image = styled.div<ImageProps>`
   height: 100%;
   width: 100%;
-  background: url(${props => props.img}) no-repeat center;
+  background: url(${({ img }) => img}) no-repeat center;
   background-size: cover;
   box-sizing: border-box;
 
-  ${props =>
-    props.slideBorderRadius &&
-    css`
-      border-radius: ${props.slideBorderRadius};
-    `}
+  ${({ slideBorderRadius }) => slideBorderRadius && css`
+    border-radius: ${slideBorderRadius};
+  `}
 
-  ${props =>
-    props.focusSlide &&
-    css`
-      border: 4px solid transparent;
-      transition: border 0.3s;
+  ${({ focusSlide, slideFocusColor }) => focusSlide && css`
+    border: 4px solid transparent;
+    transition: border 0.3s;
 
-      &:hover {
-        border: 4px solid
-          ${props.slideFocusColor ? props.slideFocusColor : '#FFF'};
-      }
-    `};
+    &:hover {
+      border: 4px solid ${slideFocusColor ? slideFocusColor : '#FFF'};
+    }
+  `};
 `;

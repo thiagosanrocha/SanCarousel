@@ -7,8 +7,12 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   position: absolute;
-  bottom: ${props => props.marginBottomDots ? props.marginBottomDots : '5%'};
-  right: ${props => props.marginRightDots ? props.marginRightDots : '8%'};
+
+  bottom: ${({ marginBottomDots }) => 
+    marginBottomDots ? marginBottomDots : '5%'};
+
+  right: ${({ marginRightDots }) => marginRightDots ? marginRightDots : '8%'};
+
   display: flex;
   align-items: center;
 `;
@@ -20,10 +24,10 @@ interface DotProps {
 
 export const Dot = styled.span<DotProps>`
   display: block;
-  width: ${props => (props.dotsDiameter ? props.dotsDiameter : '10')}px;
-  height: ${props => (props.dotsDiameter ? props.dotsDiameter : '10')}px;
+  width: ${({ dotsDiameter }) => (dotsDiameter ? dotsDiameter : '10')}px;
+  height: ${({ dotsDiameter }) => (dotsDiameter ? dotsDiameter : '10')}px;
   border-radius: 50%;
-  background: ${props => (props.active ? '#FFF' : 'rgba(255, 255, 255, 0.5)')};
+  background: ${({ active }) => (active ? '#FFF' : 'rgba(255, 255, 255, 0.5)')};
   cursor: pointer;
 
   & + span {

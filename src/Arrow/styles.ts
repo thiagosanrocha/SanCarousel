@@ -7,8 +7,9 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
   position: absolute;
   top: 0;
-  ${props =>
-    props.direction === 'left'
+  
+  ${({ direction }) =>
+    direction === 'left'
       ? css`
           left: 0;
         `
