@@ -60,9 +60,7 @@ const SanCarousel: React.FC<SanCarouselProps> = ({
     transition: transitionTime,
   });
 
-  const [_slides] = useState(() =>
-    slides.map((slide, index) => ({ ...slide, id: index })),
-  );
+  const _slides = slides.map((slide, index) => ({ ...slide, id: index }));
 
   const { activeSlide, translate, transition } = settings;
 
