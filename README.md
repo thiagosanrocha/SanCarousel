@@ -1,7 +1,7 @@
 # SanCarousel
 [![npm](https://img.shields.io/npm/v/sancarousel?color=04D361)](https://www.npmjs.com/package/sancarousel)
 
-A simple Carousel easy to use and very customizable.
+A simple Carousel for React Web, easy to use and very common.
 
 ### Overview
 #
